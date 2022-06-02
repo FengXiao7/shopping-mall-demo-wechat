@@ -1,0 +1,22 @@
+/* pages/home/home.wxss */
+swiper image {
+	width: 100%;
+}
+
+swiper {
+	height: 297rpx;
+}
+
+.goodsMessage{
+	display: flex;
+	flex-direction: row;
+}
+
+.goodsMessage image{
+	width: 200rpx;
+}
+.goodsDetail{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
