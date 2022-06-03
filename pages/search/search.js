@@ -51,7 +51,7 @@ Page({
         // type====1,跳转至商品分类;type===2，跳转至商品详情
         if (e.detail.item.type === 1) {
             wx.navigateTo({
-                url: `/pages/searchList/searchList?id=${e.detail.item.id}&name=${e.detail.item.title}`,
+                url: `/pages/searchList/searchList?id=${e.detail.item.id}&title=${e.detail.item.title}`,
             })
         } else {
             wx.navigateTo({

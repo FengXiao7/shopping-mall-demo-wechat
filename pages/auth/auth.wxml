@@ -1,0 +1,1 @@
+<button type="primary" bindtap="handleTap">点击授权</button>

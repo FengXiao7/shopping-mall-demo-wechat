@@ -1,66 +1,57 @@
-// pages/searchList/searchList.js
+import request from '../../util/request'
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        goodsList:[]
     },
-
+    // 价格降序true
+    priceOrder:true,
+    // 好评率降序true
+    commentOrder:true,
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-        console.log(options)
+        wx.setNavigationBarTitle({
+          title: options.title,
+        })
+        this.getCategoryList(options.id)
     },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady() {
-
+    // 获取某分类下的所有产品
+    getCategoryList(id){
+        request({
+            url:`/categories/${id}?_embed=goods`,
+            method:"GET"
+        }).then(res=>{
+            this.setData({
+                goodsList:res.goods
+            })
+        })
     },
+    // 点击产品，跳转到详情页
+    handleTap(event){
+        var id = event.currentTarget.dataset.id
+        var title = event.currentTarget.dataset.title
 
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow() {
-
+        wx.navigateTo({
+            url: `/pages/detail/detail?id=${id}&title=${title}`,
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide() {
-
+    // 好评率排序
+    handleComment(){
+        this.commentOrder=!this.commentOrder
+        this.setData({
+            goodsList:this.commentOrder?this.data.goodsList.sort((item1,item2)=>parseInt(item1.goodcomment)-parseInt(item2.goodcomment)):this.data.goodsList.sort((item1,item2)=>parseInt(item2.goodcomment)-parseInt(item1.goodcomment))
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload() {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh() {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom() {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage() {
-
+    // 价格排序
+    handlePrice(){
+        this.priceOrder=!this.priceOrder
+        this.setData({
+            goodsList:this.priceOrder?this.data.goodsList.sort((item1,item2)=>item1.price-item2.price):this.data.goodsList.sort((item1,item2)=>item2.price-item1.price)
+        })
     }
 })

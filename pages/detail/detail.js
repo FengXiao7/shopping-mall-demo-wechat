@@ -1,4 +1,5 @@
 import request from '../../util/request'
+import CheckAuth from '../../util/auth'
 Page({
 
     /**
@@ -38,6 +39,7 @@ Page({
         urls: this.data.detailInfo.slides.map(item=>`http://localhost:5999${item}`)
       })
     },
+    // 控制激活样式
     handleActive(event){
       this.setData({
         current:event.currentTarget.dataset.current
@@ -53,4 +55,10 @@ Page({
         })
       })
     },
+    //加入购物车回调 
+    handleAdd(){
+      CheckAuth(()=>{
+        console.log("加入购物车")
+      })
+    }
 })

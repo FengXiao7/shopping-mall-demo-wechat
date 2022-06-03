@@ -1,1 +1,19 @@
-/* pages/searchList/searchList.wxss */
+.container{
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: -200rpx;
+}
+.good{
+	width: 50%;
+	height: 600rpx;
+	text-align: center;
+  }
+  
+  .good image{
+	width: 100%;
+  }
+
+  .sort{
+	  display: flex;
+	  justify-content: space-around;
+  }

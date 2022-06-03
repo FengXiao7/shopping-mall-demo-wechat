@@ -6,7 +6,9 @@
         "pages/center/center",
         "pages/detail/detail",
         "pages/search/search",
-        "pages/searchList/searchList"
+        "pages/searchList/searchList",
+        "pages/auth/auth",
+        "pages/telform/telform"
     ],
     "window": {
         "backgroundTextStyle": "dark",
