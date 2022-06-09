@@ -1,13 +1,13 @@
 //params:参数对象，
 //isGetTotalCount:是否需要响应头里面的X-Total-Count
 function request(params,isGetTotalCount=false) {
-	wx.showLoading({
-		title: '加载中',
-	})
 	return new Promise((resolve, reject) => {
+		wx.showLoading({
+			title: '加载中',
+		})
 		wx.request({
 			...params,
-			url: "http://localhost:5999"+params.url,
+			url: "http://localhost:5000"+params.url,
 			success: (res) => {
 				if(isGetTotalCount){
 					resolve({

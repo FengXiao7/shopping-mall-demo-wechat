@@ -1,1 +1,40 @@
 /* pages/shopcar/shopcar.wxss */
+.cellfooter{
+	width: 150rpx;
+	display: flex;
+	justify-content: space-between;
+}
+.cellfooter text{
+	height: 50rpx;
+	width: 50rpx;
+	text-align: center;
+	line-height: 50rpx;
+	background-color: rgb(40, 163, 77);
+}
+
+.content{
+	display: flex;
+	align-items: center;
+}
+
+.content image{
+	width: 150rpx;
+	height: 150rpx;
+}
+
+.about{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.footer{
+	z-index: 10;
+	position: fixed;
+	left:0px;
+	bottom: 0px;
+	width: 100%;
+	height: 80rpx;
+	background-color: white;
+	display: flex;
+  }

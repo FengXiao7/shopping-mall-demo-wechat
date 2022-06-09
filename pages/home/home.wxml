@@ -1,17 +1,16 @@
 <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="2000" circular="{{true}}">
 	<swiper-item wx:for="{{loopList}}" wx:key="index">
-		<image src="http://localhost:5999{{item.url}}" mode="widthFix"></image>
+		<image src="http://localhost:5000{{item.url}}" mode="widthFix"></image>
 	</swiper-item>
 </swiper>
-<mp-sticky offset-top="1">
+ <mp-sticky offset-top="1">
 	<view style="width: 100vw;">
-		<!-- 子传父 -->
-		<Search bindevent="handleEvent"/>
+		<search bindevent="handleEvent"/>
 	</view>
-</mp-sticky>
+</mp-sticky> 
 <view>
 	<view wx:for="{{goodsList}}" class="goodsMessage" wx:key="id" bindtap="changePage" data-id="{{item.id}}" data-title="{{item.title}}">
-		<image src="http://localhost:5999{{item.poster}}" mode="widthFix"></image>
+		<image src="http://localhost:5000{{item.poster}}" mode="widthFix"></image>
 		<view class="goodsDetail">
 			<view>商品名：{{item.title}}</view>
 			<view style="color:red;">价格：￥{{item.price}}</view>

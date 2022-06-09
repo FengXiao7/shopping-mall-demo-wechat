@@ -2,14 +2,15 @@
   vtabs="{{vtabs}}" 
   activeTab="{{activeTab}}" 
   class="test"
+  tab-active-text-color="#14c145"
+  tab-line-color="#14c145"
 >
   <block wx:for="{{vtabs}}" wx:key="title" >
     <mp-vtabs-content tabIndex="{{index}}">
       <view class="vtabs-content-item">
         <view wx:for="{{item.goods}}" wx:key="id" class="item" bindtap="handleTap" data-id="{{item.id}}" data-title="{{item.title}}">
-          <image src="http://localhost:5999{{item.poster}}" mode="widthFix"/>
-          <view>
-          {{item.title}}</view>
+          <image src="http://localhost:5000{{item.poster}}" mode="widthFix"/>
+          <view>{{item.title}}</view>
         </view>
       </view>
     </mp-vtabs-content>

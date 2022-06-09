@@ -20,7 +20,7 @@ Page({
             this.renderGoods()
     },
     /**
-     * 页面上拉触底事件的处理函数
+     * 页面上拉触底事件的处理函数，再次请求5个商品直至所有商品获取完。
      */
     onReachBottom() {
         if (this.data.goodsList.length === this.total) {
@@ -40,7 +40,7 @@ Page({
             })
         })
     },
-    // 加载商品
+    // 加载商品,需要request第二个参数获取总商品数，顺便设置商品总数
     renderGoods() {
         request({
             url: `/goods?_page=${this.current}&_limit=5`,

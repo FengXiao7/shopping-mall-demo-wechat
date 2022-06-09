@@ -24,7 +24,7 @@ Page({
   },
 
   handleTap(evt){
-    console.log(evt.currentTarget.dataset.id)
+    // console.log(evt.currentTarget.dataset.id)
     var id = evt.currentTarget.dataset.id
     var title = evt.currentTarget.dataset.title
     wx.navigateTo({

@@ -1,0 +1,21 @@
+function sum(List){
+	var sum=0
+	for(var i=0;i<List.length;i++){
+		sum+=List[i].checked?List[i].good.price*List[i].number:0
+	}
+	return sum
+}
+
+function isAllChecked(List){
+	if(List.length===0){
+		return false
+	}
+	// return List.every(item=>item.checked===true)
+	return List.every(function(item){
+		return item.checked===true
+	})
+}
+module.exports={
+	sum:sum,
+	isAllChecked:isAllChecked
+}

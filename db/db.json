@@ -759,6 +759,62 @@
       "number": 3,
       "checked": false,
       "id": 6
+    },
+    {
+      "username": "冯小7",
+      "tel": "1234",
+      "goodId": 2,
+      "number": 5,
+      "checked": false,
+      "id": 7
+    },
+    {
+      "username": "冯小7",
+      "tel": "1234",
+      "goodId": 5,
+      "number": 5,
+      "checked": true,
+      "id": 8
+    },
+    {
+      "username": "冯小7",
+      "tel": "1234",
+      "goodId": 1,
+      "number": 1,
+      "checked": false,
+      "id": 9
+    },
+    {
+      "username": "冯小7",
+      "tel": "1234",
+      "goodId": 3,
+      "number": 2,
+      "checked": false,
+      "id": 10
+    },
+    {
+      "username": "冯小7",
+      "tel": "123",
+      "goodId": 3,
+      "number": 1,
+      "checked": false,
+      "id": 11
+    },
+    {
+      "username": "冯小7",
+      "tel": "123",
+      "goodId": 2,
+      "number": 1,
+      "checked": true,
+      "id": 12
+    },
+    {
+      "username": "冯小7",
+      "tel": "123",
+      "goodId": 1,
+      "number": 1,
+      "checked": false,
+      "id": 13
     }
   ],
   "users": [
@@ -774,61 +830,17 @@
       "id": 1
     },
     {
-      "nickName": "饮冰",
-      "gender": 1,
+      "nickName": "冯小7",
+      "gender": 0,
       "language": "zh_CN",
-      "city": "Dalian",
-      "province": "Liaoning",
-      "country": "China",
-      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epAvz1Q85rbZnRmKicDicF3uwySCicaY25pU2XKqItGzeQf3y1ibsr6raqnLnB2jBGrj7mzESGCHEO83Q/132",
-      "tel": "123",
+      "city": "",
+      "province": "",
+      "country": "",
+      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/jYIDhxfmg8FAnfgAcuohWkSqzCia0q4uHlHTgJg6OBIic9j3kib8ibB0UgSWbLdBDyEnxUp8tSPV7o8L8JEe6PkMng/132",
+      "tel": "1234",
       "id": 2
     },
     {
-      "nickName": "饮冰",
-      "gender": 1,
-      "language": "zh_CN",
-      "city": "Dalian",
-      "province": "Liaoning",
-      "country": "China",
-      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epAvz1Q85rbZnRmKicDicF3uwySCicaY25pU2XKqItGzeQf3y1ibsr6raqnLnB2jBGrj7mzESGCHEO83Q/132",
-      "tel": "124",
-      "id": 3
-    },
-    {
-      "nickName": "饮冰",
-      "gender": 1,
-      "language": "zh_CN",
-      "city": "Dalian",
-      "province": "Liaoning",
-      "country": "China",
-      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epAvz1Q85rbZnRmKicDicF3uwySCicaY25pU2XKqItGzeQf3y1ibsr6raqnLnB2jBGrj7mzESGCHEO83Q/132",
-      "tel": "345",
-      "id": 4
-    },
-    {
-      "nickName": "饮冰",
-      "gender": 1,
-      "language": "zh_CN",
-      "city": "Dalian",
-      "province": "Liaoning",
-      "country": "China",
-      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epAvz1Q85rbZnRmKicDicF3uwySCicaY25pU2XKqItGzeQf3y1ibsr6raqnLnB2jBGrj7mzESGCHEO83Q/132",
-      "tel": "456",
-      "id": 5
-    },
-    {
-      "nickName": "冯小7",
-      "gender": 0,
-      "language": "zh_CN",
-      "city": "",
-      "province": "",
-      "country": "",
-      "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/jYIDhxfmg8FAnfgAcuohWkSqzCia0q4uHlHTgJg6OBIic9j3kib8ibB0UgSWbLdBDyEnxUp8tSPV7o8L8JEe6PkMng/132",
-      "tel": "18284557222",
-      "id": 6
-    },
-    {
       "nickName": "冯小7",
       "gender": 0,
       "language": "zh_CN",
@@ -837,7 +849,7 @@
       "country": "",
       "avatarUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/jYIDhxfmg8FAnfgAcuohWkSqzCia0q4uHlHTgJg6OBIic9j3kib8ibB0UgSWbLdBDyEnxUp8tSPV7o8L8JEe6PkMng/132",
       "tel": "123",
-      "id": 7
+      "id": 3
     }
   ]
 }
